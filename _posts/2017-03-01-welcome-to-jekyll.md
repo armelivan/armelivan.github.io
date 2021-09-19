@@ -1,9 +1,12 @@
 ---
-title: "Semaine 1"
+title: "Présentation du projet"
 layout: post
 ---
 
-Cette section fait également office de présentation du projet.
+Cette section fait également office de sommaire de présentation du projet.
+Nous avons pour but  de  developper un programme pour `calculer la valeur de véracité` d'un article donné (`news truthfulness scoring) by measuring the consensus among fact-checkers decisions`)
+
+*
 
 
 
