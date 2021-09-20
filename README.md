@@ -4,96 +4,33 @@ permalink: "/about/"
 layout: page
 ---
 
-## Installation
+An Automated Fake News Detection System Based on Factchecking Analysis and Trusted Web Sources.
 
-Just fork this [repository](https://github.com/niklasbuschmann/contrast) and adjust the `_config.yml` to use with [Github Pages](https://pages.github.com/) and your page is done.
+Proposed by:
+-	Sabrine Amri [sabrine.amri@umontreal.ca]
+-	Esma Aïmeur [aimeur@iro.umontreal.ca]
+Project description:
+Fake news detection can be defined as the prediction of the veracity of a particular news article, using varied approaches. Content-based detection is one of the most used approach, which focuses on what is being transmitted, that is, on identifying the meaning of the content of the news. Factchecking approaches try to tackle this issue.  Formally, fact-checking is the task of evaluating whether the statements made are true, which is usually done by trained professionals [1].
 
-## Features
+ 
+Therefore, many fact-checking websites was developed. For this end, we can refer to The International Fact-Checking Network’s (IFCN) signatories list , which lists only trusted factchecking websites that have a high reputation. As example of high reputation factchecking organizations we can mention Africa Check, the Ferret Fact Service, factscan.ca, politifact.com, snopes.com, checkyourfact.com, truthorfiction.com, etc.
+The Truthfulness of claims and news is described by factchecking websites using different discrete textual values of ratings. For example, PolitiFact factchecking website uses the following (“True”, “Mostly True”, “Mostly False”, etc.).
 
- - supports dark mode on macOS Mojave
- - optional sidebar
- - MathJax support
- - no external ressources
- - included archive page
- - supports pagination
- - feed generation
- - responsive
- - syntax highlighting
- - supports comments via [disqus](https://disqus.com/) or [isso](http://posativ.org/isso/)
+ Recently, some researchers [2] are discussing this issue and trying to harmonize their datasets containing the claims through providing normalized rating score alongside the original ratings as provided in their so called (Rating normalization tables for ClaimsKG ). 
 
-## Based on
+In order to provide the normalized rating score, these authors summarise the distribution of rating values and then assigned them to a conservative and coarser-grained set of labels that correspond to the least common denominator between all the classifications of the individual sites. The rating scheme they provide consists of four basic categories (TRUE, FALSE, MIXTURE, OTHER).
+However, this rating schema is still difficult to use to measure news truthfulness given by multiple factchecking websites. 
+This project aims to develop a software solution to automate the computing of the veracity of a given news (news truthfulness scoring) by measuring the consensus among fact-checkers decisions:
+1.	Collect the various decisions made by all factchecking websites regarding the veracity of a given news article (news truthfulness). 
+2.	Quantify the given decisions in order to exploit them in measuring the veracity of the news given by multiple factchecking websites. 
+3.	Combine the obtained value in step 2, in order to have as output a one single value that represents the decision about the truthfulness of the news. 
 
-- [Hyde](https://github.com/poole/hyde)
-- [Minima](https://github.com/jekyll/minima)
-- [Lagrange](https://github.com/LeNPaul/Lagrange)
-- [Font Awesome](http://fontawesome.io/)
-- [KaTeX](https://katex.org/)
-- [Pygments](https://github.com/richleland/pygments-css)
+In order to improve the result obtained form measuring consensus among fact-checkers, the proposed software must check if the news is already published by a trusted source. These sources may include official websites of different entities such as international organizations, official websites of ministries, official websites of media sources (radios, TVs, etc.), websites of news (yahoo news, google news), verified accounts on social media, etc.
 
-## Installation (jekyll-remote-theme method)
+Required work:
 
-You can use this theme with the `jekyll-remote-theme` plugin. Just create an empty repo, copy over the `index.html` file and add this to your `_config.yml`:
+1.	Propose a solution for measuring consensus among fact-checkers.
+2.	Design and implement the solution.
 
-```yaml
-remote_theme: niklasbuschmann/contrast@v2.11
 
-plugins:
-  - jekyll-remote-theme
-```
-
-Note: to enable icons you also need to copy over the `_data` folder.
-
-## Config
-
-Your `_config.yml` could for example look like this:
-
-```yaml
-title: "Blog Title"
-author: "Blog Author"
-description: "My personal blog about ... something"
-permalink: /:title/
-lang: "en"
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
-
-# Layout
-
-show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
-
-# Menu
-
-navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
-
-external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
-
-comments:
-#  disqus_shortname: ""    # see https://disqus.com/
-#  isso_domain: ""         # see https://posativ.org/isso/
-
-plugins:
- - jekyll-feed
-
-```
-
-## MathJax
-
-Contrast comes preinstalled with a leightweight alternative to MathJax called [KaTeX](https://katex.org/). To display equations in a post simply set `mathjax: true` in the article's front matter.
-
-## License
-
-[public domain](http://unlicense.org/)
-
-## Screenshots
-
-![screenshot](https://user-images.githubusercontent.com/4943215/109431850-cd711780-7a08-11eb-8601-2763f2ee6bb4.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/109431832-b6cac080-7a08-11eb-9c5e-a058680c23a1.png)
-
-![screenshot](https://user-images.githubusercontent.com/4943215/73125194-5f0b8b80-3fa4-11ea-805c-8387187503ad.png)
+![image](https://user-images.githubusercontent.com/34576054/133950010-f40424a7-0f9a-416f-ae1b-70f05b4e314c.png)
