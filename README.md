@@ -9,6 +9,9 @@ An Automated Fake News Detection System Based on Factchecking Analysis and Trust
 Proposed by:
 -	Sabrine Amri [sabrine.amri@umontreal.ca]
 -	Esma Aïmeur [aimeur@iro.umontreal.ca]
+
+For : Armel Ivan Bado 
+
 Project description:
 Fake news detection can be defined as the prediction of the veracity of a particular news article, using varied approaches. Content-based detection is one of the most used approach, which focuses on what is being transmitted, that is, on identifying the meaning of the content of the news. Factchecking approaches try to tackle this issue.  Formally, fact-checking is the task of evaluating whether the statements made are true, which is usually done by trained professionals [1].
 
@@ -31,6 +34,3 @@ Required work:
 
 1.	Propose a solution for measuring consensus among fact-checkers.
 2.	Design and implement the solution.
-
-
-![image](https://user-images.githubusercontent.com/34576054/133950010-f40424a7-0f9a-416f-ae1b-70f05b4e314c.png)
