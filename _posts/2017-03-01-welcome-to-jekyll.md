@@ -14,7 +14,11 @@ Nous voulons :
 
 Dans le cadre de ce projet, j'envisage explorer les  échelles de mesures actuelles et comprendre leurs limitations. Aussi ce sera l'occasion pour moi de découvrir  de façon plus approfondie les technologies de `web scrapping`. 
 
-Le projet a débuté un peus plus tard que prévue due 
+Le projet a débuté un peus plus tard que prévue due à une attente pour la validation du cours.
+
+**Date de début** : 12 septembre 
+**Date estimée de fin**: 12 Décembre 
+**Date de présentation**: À assigner 
 
 
 
