@@ -24,7 +24,7 @@ Le projet a débuté un peus plus tard que prévue due à une attente pour la va
 **Semaine 0** :
 Cette semaine, j'ai eu la confirmation de la validation du cours, j'ai également mis en place l'actuel site. Une autre portion de mon temps à été consacré à la lecture de deux articles recommendés. 
 1. [Automated fact checking: Task formulations, methods and future directions]( https://arxiv.org/pdf/1806.07687.pdf)
-2. [ClaimsKG: A Knowledge Graph of Fact-Checked Claims.," in International Semantic Web Conference, 2019![image](https://hal.archives-ouvertes.fr/hal-02404153/file/ClaimsKG_A_knowledge_graph_of_annotated_claims.pdf)
+2. [ClaimsKG: A Knowledge Graph of Fact-Checked Claims.," in International Semantic Web Conference, 2019](https://hal.archives-ouvertes.fr/hal-02404153/file/ClaimsKG_A_knowledge_graph_of_annotated_claims.pdf)
 
 
 
