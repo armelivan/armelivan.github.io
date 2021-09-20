@@ -21,7 +21,7 @@ Le projet a débuté un peus plus tard que prévue due à une attente pour la va
 **Date de présentation**: À assigner 
 
 
-**Semaine 0 :** 
+**Semaine 0** :
 
 Cette semaine, j'ai eu la confirmation de la validation du cours, j'ai également mis en place l'actuel site. Une autre portion de mon temps à été consacré à la lecture de deux articles recommendé par **Samri**. 
 -
