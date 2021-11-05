@@ -34,3 +34,5 @@ Required work:
 
 1.	Propose a solution for measuring consensus among fact-checkers.
 2.	Design and implement the solution.
+
+The code repository can be found at [Fact-check implementation](https://github.com/armelivan/factCheckerCode)
